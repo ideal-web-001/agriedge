@@ -1,0 +1,58 @@
+<app-header></app-header>
+<ngb-carousel  class="w-100">
+	<ng-template ngbSlide >
+		<div class="">
+			<img src="../../assets/img1.jpg" class="w-100" alt="Random first slide" />
+		</div>
+		
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img4.jpg"class="w-100" alt="Random second slide" />
+		</div>
+		
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img2.jpg" class="w-100" alt="Random third slide" />
+		</div>
+		
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img3.jpg" class="w-100" alt="Random fourth slide" />
+		</div>
+		
+	</ng-template>
+</ngb-carousel>
+
+<div class="quote">
+<div class="loginpage">
+	<form action="">
+		<h2 class="text-white p-3">SIGN IN</h2>
+		<div>
+			<mat-form-field class="example-full-width">
+				<mat-label>Username</mat-label>
+				<input matInput placeholder="Username">
+			  </mat-form-field>
+		</div>
+		<div>
+			<mat-form-field class="example-full-width">
+				<mat-label>Password</mat-label>
+				<input matInput type="password" placeholder="Username">
+			  </mat-form-field>
+		</div>
+		<div class="loginbtn">
+			<button class="btn text-white" (click)="onlogin()">Login</button>
+		</div>
+		<div class="text-white p-4">
+
+			<span >Create Account? <span style="color: blue;" routerLink="/registration">Click here</span></span><br><br>
+			<span>forgot Password? <a href="#">Click here</a></span>
+		</div>
+		
+
+	</form>
+</div>
+</div>
+<app-footer></app-footer>

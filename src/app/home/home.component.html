@@ -1,0 +1,39 @@
+
+<app-header></app-header>
+<ngb-carousel *ngIf="images" class="w-100">
+	<ng-template ngbSlide >
+		<div class="">
+			<img src="../../assets/img1.jpg" class="w-100" alt="Random first slide" />
+		</div>
+		
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img4.jpg"class="w-100" alt="Random second slide" />
+		</div>
+		
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img2.jpg" class="w-100" alt="Random third slide" />
+		</div>
+	
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/img3.jpg" class="w-100" alt="Random fourth slide" />
+		</div>
+		
+	</ng-template>
+</ngb-carousel>
+<div class="quote">
+    <p>
+        The ultimate goal of farming is not the growing<br> of crops, but the cultivation and perfection of<br> human beings.
+    </p>
+    <div class="btndiv">
+        <button class="btn" routerLink="/registration">Sign Up</button>
+        <button class="btn" routerLink="/login">Sign In</button>
+    </div>
+    
+</div>
+<app-footer></app-footer>

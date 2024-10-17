@@ -1,0 +1,35 @@
+<mat-toolbar color="" class="bg-dark text-white">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>AgriEdge</span>
+    <span class="example-spacer"></span>
+    <span  [matMenuTriggerFor]="menu" style=" font-family: Inria Serif;">Adarsh Singh<mat-icon >arrow_drop_down</mat-icon></span>
+    <div id="usericon"></div>   
+</mat-toolbar>
+<mat-menu #menu="matMenu"class='bg-dark '>
+  <button mat-menu-item   routerLink="/login"><mat-icon class="text-light">logout</mat-icon><span class="text-light">Log out</span></button>
+  <!-- <button mat-menu-item class="text-white">Setting</button> -->
+</mat-menu>
+<mat-drawer-container class="example-container " autosize>
+    <mat-drawer #drawer class="example-sidenav bg-dark text-light " mode="side" opened="autoside">
+      
+        <ul>
+          <li routerLink="./admin-dashboard" routerLinkActive="active"><mat-icon>dashboard</mat-icon> &nbsp;Dashboard</li>
+
+            <li routerLink="./weather" routerLinkActive="active"><mat-icon>cloud</mat-icon> &nbsp;Weather</li>
+            <li routerLink="./marketprice" routerLinkActive="active"><mat-icon>money</mat-icon> &nbsp;Market Price</li>
+            <li routerLink="./practice" routerLinkActive="active"><mat-icon>rowing</mat-icon>&nbsp; Practices</li>
+            <li routerLink="./adminsetting" routerLinkActive="active"><mat-icon>settings</mat-icon>&nbsp; Setting</li>
+            <li routerLink="/login"><mat-icon>logout</mat-icon> &nbsp;Logout</li>
+
+        </ul>
+      
+      
+    </mat-drawer>
+  
+    
+    <app-viewport></app-viewport>
+  
+  </mat-drawer-container>
+<app-footer></app-footer>

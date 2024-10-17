@@ -1,0 +1,46 @@
+img{
+    height: 650px;
+}
+carousel-control-next-icon{
+    display:  none !important;
+
+}
+carousel-indicators [data-bs-target]{
+    display: none;
+}
+
+  .quote{
+    position: fixed;
+    top:65px;
+    height: 650px;
+    width: 100%;
+    
+    z-index: 0;
+    background-color:black;
+    opacity: 0.8;
+
+  }
+  p{
+    color: antiquewhite;
+    font-family:'kalam';
+    font-size: 36px;
+    margin-top: 200px;
+    text-align: center;
+    line-height: 50px;
+  
+    
+  }
+  .btn{
+    border: 1px solid antiquewhite;
+    color:antiquewhite ;
+    font-weight: 100;
+    text-align: center;
+    margin: 0px 15px 0px 15px ;
+    
+  }
+  .btndiv{
+    position: absolute;
+    top: 400px;
+    left: 650px;
+    text-align: center;
+  }
